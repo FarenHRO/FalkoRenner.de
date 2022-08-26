@@ -12,6 +12,9 @@
 
 <body>
   <header class="header">
+    <div class="headerbg">
+
+    </div>
     <a href="#" class="logo" >FalkoRenner.de</a>
     <ul class="ul">
       <li><a href="#" class="nav">Home</a></li>
@@ -137,6 +140,7 @@
     const nav2 = document.querySelector('.nav2')
     const nav3 = document.querySelector('.nav3')
     const nav4 = document.querySelector('.nav4')
+    const headerbg = document.querySelector('.headerbg')
     window.onscroll = function() {
       var top = window.scrollY;
       console.log(top);
@@ -147,6 +151,7 @@
         nav2.classList.add('scroll');
         nav3.classList.add('scroll');
         nav4.classList.add('scroll');
+        headerbg.classList.add('scroll');
 
       } else {
         header.classList.remove('active');
@@ -155,6 +160,7 @@
         nav2.classList.remove('scroll');
         nav3.classList.remove('scroll');
         nav4.classList.remove('scroll');
+        headerbg.classList.remove('scroll');
       }
     }
   </script>
