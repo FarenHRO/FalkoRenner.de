@@ -31,16 +31,20 @@ header {
 
 header .headerbg{
   position: absolute;
+  background: transparent;
   background-color: black;
   width: 100%;
-  height: 100%;
+  display: flex;
+  height: 60px;
   top: 0;
   left: 0;
   opacity: 20%;
+  z-index: 2000;
 }
 
 .headerbg.scroll{
   opacity: 0%;
+  z-index: 2000;
 }
 
 header.active{
@@ -70,6 +74,7 @@ header .logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+  z-index: 10000;
 
 }
 
@@ -87,6 +92,7 @@ header ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10000;
 }
 
 header ul li {
